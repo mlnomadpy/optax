@@ -18,9 +18,9 @@
 
 from optax.contrib._acprop import acprop
 from optax.contrib._acprop import scale_by_acprop
+from optax.contrib._cocob import scale_by_cocob
 from optax.contrib._cocob import cocob
 from optax.contrib._cocob import COCOBState
-from optax.contrib._cocob import scale_by_cocob
 from optax.contrib._complex_valued import split_real_and_imaginary
 from optax.contrib._complex_valued import SplitRealAndImaginaryState
 from optax.contrib._dadapt_adamw import dadapt_adamw
