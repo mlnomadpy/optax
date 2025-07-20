@@ -41,11 +41,13 @@ from optax.losses.classification import (
 )
 from optax.losses._fenchel_young import make_fenchel_young_loss
 from optax.losses._ranking import ranking_softmax_loss
-from optax.losses._regression import cosine_distance
-from optax.losses._regression import cosine_similarity
-from optax.losses._regression import huber_loss
-from optax.losses._regression import l2_loss
-from optax.losses._regression import log_cosh
-from optax.losses._regression import squared_error
+from optax.losses.regression import (
+    squared_error,
+    l2_loss,
+    huber_loss,
+    log_cosh,
+    cosine_similarity,
+    cosine_distance,
+)
 from optax.losses._self_supervised import ntxent
 from optax.losses._smoothing import smooth_labels
