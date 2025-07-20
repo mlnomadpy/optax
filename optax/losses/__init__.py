@@ -16,23 +16,29 @@
 
 # pylint:disable=g-importing-member
 
-from optax.losses._classification import convex_kl_divergence
-from optax.losses._classification import ctc_loss
-from optax.losses._classification import ctc_loss_with_forward_probs
-from optax.losses._classification import hinge_loss
-from optax.losses._classification import kl_divergence
-from optax.losses._classification import kl_divergence_with_log_targets
-from optax.losses._classification import multiclass_hinge_loss
-from optax.losses._classification import multiclass_perceptron_loss
-from optax.losses._classification import multiclass_sparsemax_loss
-from optax.losses._classification import perceptron_loss
-from optax.losses._classification import poly_loss_cross_entropy
-from optax.losses._classification import safe_softmax_cross_entropy
-from optax.losses._classification import sigmoid_binary_cross_entropy
-from optax.losses._classification import sigmoid_focal_loss
-from optax.losses._classification import softmax_cross_entropy
-from optax.losses._classification import softmax_cross_entropy_with_integer_labels
-from optax.losses._classification import sparsemax_loss
+from optax.losses.classification import (
+    sigmoid_binary_cross_entropy,
+    binary_logistic_loss,
+    hinge_loss,
+    perceptron_loss,
+    sparsemax_loss,
+    binary_sparsemax_loss,
+    weighted_logsoftmax,
+    safe_softmax_cross_entropy,
+    softmax_cross_entropy,
+    softmax_cross_entropy_with_integer_labels,
+    multiclass_logistic_loss,
+    multiclass_hinge_loss,
+    multiclass_perceptron_loss,
+    poly_loss_cross_entropy,
+    kl_divergence,
+    kl_divergence_with_log_targets,
+    convex_kl_divergence,
+    ctc_loss_with_forward_probs,
+    ctc_loss,
+    sigmoid_focal_loss,
+    multiclass_sparsemax_loss,
+)
 from optax.losses._fenchel_young import make_fenchel_young_loss
 from optax.losses._ranking import ranking_softmax_loss
 from optax.losses._regression import cosine_distance
